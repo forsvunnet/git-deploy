@@ -11,7 +11,8 @@ if (isset($_POST) && count($_POST) > 0) {
   file_put_contents('log.txt', json_encode($log));
 
 } else {
-  echo"<h1>Helps using the right repo</h1>".
+  echo "<h1>Helps using the right repo</h1>".
     $log . '<hr>' . $github_ips
     ;
 }
+echo $github_ips;
