@@ -7,7 +7,7 @@ if (isset($_POST) && count($_POST) > 0) {
     $log [] = $_POST;
   } else {
   }*/
-  $log = array('git'=>shell_exec('git pull'),'post'=>$_POST);
+  $log = array('ip'=>$_SERVER['REMOTE_ADDR'] ,'git'=>shell_exec('git pull'),'post'=>$_POST);
   file_put_contents('log.txt', json_encode($log));
 
 } else {
