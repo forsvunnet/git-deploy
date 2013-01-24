@@ -1,7 +1,7 @@
  <?php 
 $github_ips = '207.97.227.253, 50.57.128.197, 108.171.174.178, 50.57.231.61';
 
-$log = json_decode(file_get_contents('log.txt'));
+$log = (file_get_contents('log.txt'));
 if (isset($_POST) && count($_POST) > 0) {
   /*if (!empty($log)) {
     $log [] = $_POST;
